@@ -12,10 +12,16 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "keybindings": {
+      "command": "test-file-opener.openTestFile",
+      "when": "editorTextFocus",
+      "key": "ctrl+shift+a",
+      "mac": "cmd+shift+a"
+    },
     "commands": [
       {
-        "command": "test-file-opener.helloWorld",
-        "title": "Hello World"
+        "command": "test-file-opener.openTestFile",
+        "title": "Open test file"
       }
     ]
   },
