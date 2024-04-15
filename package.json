@@ -16,6 +16,16 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "test-file-opener",
+      "properties": {
+        "openAI.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your OpenAI API Key"
+        }
+      }
+    },
     "keybindings": {
       "command": "test-file-opener.openTestFile",
       "when": "editorTextFocus",
@@ -52,6 +62,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "esbuild": "^0.20.2"
+    "esbuild": "^0.20.2",
+    "openai": "^4.33.0"
   }
 }
