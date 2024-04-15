@@ -2,6 +2,7 @@
   "name": "test-file-opener",
   "displayName": "test-file-opener",
   "description": "Opens the test file related to the currently opened file",
+  "publisher": "stiwsquer",
   "repository": {
     "url": "https://github.com/stiwsquer/test-file-opener"
   },
